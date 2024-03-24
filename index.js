@@ -338,7 +338,7 @@ app.post('/ownerdelete', (req, res) => {
 
 app.post('/ownersearch', (req, res) => {
 
-  const owner = req.body.owner;
+  const owner = req.body.owner_id;
 
   let search = `'%${owner}%'`
 
@@ -452,7 +452,7 @@ app.post('/tenantdelete', (req, res) => {
 
 app.post('/tenantsearch', (req, res) => {
 
-  const tenant = req.body.tenant;
+  const tenant = req.body.tenant_id;
 
   let search = `'%${tenant}%'`
 
